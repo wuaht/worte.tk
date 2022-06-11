@@ -50,7 +50,7 @@ export function snakeIntersection() {
 }
 
 export function checkWin() {
-    return snakeBody.length === 4 * 4 - 1
+    return snakeBody.length === 20 * 20 - 1
 }
 
 function addSegments() {
