@@ -11,7 +11,7 @@ import { outsideGrid } from "./grid.js"
 function main(currentTime) {
     if (gameOver) {
         if (confirm("you lost. press ok to restart")) {
-            window.location = "/"
+            window.location = "/snake"
         }
         return
     }
