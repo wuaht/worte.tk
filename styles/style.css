@@ -114,6 +114,16 @@
   font-size: 48px;
   letter-spacing: 1px;
 }
+
+.w-container{
+  animation: 1s ease-in 0s 1 running Fade;
+}
+
+@keyframes Fade{
+  from{opacity: 0%;}
+  to{opacity: 100%;}
+}
+
 .text-block {
   font-family: Torus, sans-serif;
   color: #f5f5f5;
