@@ -107,16 +107,13 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  animation: 1s ease-in 0s 1 running Fade;
 }
 .heading-3 {
   font-family: Torus, sans-serif;
   color: #ebebeb;
   font-size: 48px;
   letter-spacing: 1px;
-}
-
-.w-container{
-  animation: 1s ease-in 0s 1 running Fade;
 }
 
 @keyframes Fade{
@@ -169,4 +166,57 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+
+.icons {
+  font-size: 40px;
+  letter-spacing: 30px;
+  margin-right: 20px;
+  margin-top: 25px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+i {
+  color: #ebebeb;
+  width: 40px;
+  height: auto;
+}
+
+.osu-icon {
+  width: 40px;
+  height: auto;
+  position: relative;
+  top: 5px;
+}
+
+.hovertext {
+  position: relative;
+  border-bottom: 1px dotted black;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  font-family: Torus, sans-serif;
+  letter-spacing: 0px;
+  font-size: 20px;
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: #ebebeb;
+  color: #181818;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  left: -55%;
+  top: 120%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
 }
