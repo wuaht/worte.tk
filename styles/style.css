@@ -183,7 +183,7 @@ i {
   height: auto;
 }
 
-.osu-icon {
+.osu-icon, .anilist {
   width: 40px;
   height: auto;
   position: relative;
@@ -208,7 +208,7 @@ i {
   text-align: center;
   border-radius: 5px;
   padding: 5px 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 
   position: absolute;
   z-index: 1;
@@ -219,4 +219,8 @@ i {
 .hovertext:hover:before {
   opacity: 1;
   visibility: visible;
+}
+
+.anilist {
+  
 }
